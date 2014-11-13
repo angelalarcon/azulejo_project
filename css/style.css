@@ -6,6 +6,7 @@
 body {
 	font-family: "Garamond";
 	font-size: 16px;
+	color: #1a9487;
 }
 
 header {
@@ -18,8 +19,8 @@ header {
 
 #menu {
 	padding: 10px 0;
-	border-bottom: 1px solid #a4a4a4;
 	font-size: 18px;
+	height: 73px;
 }
 
 .hr {
@@ -37,8 +38,49 @@ header {
 	display: inline-block;
 }
 
+.big-font {
+	font-size: 120%;
+}
+
+.green_link {
+	color: #1a9487;
+}
+
+.green_link:hover {
+	color: #1a9487;
+}
+
+#menu .container {
+	cursor: default;
+}
+
 #menu a {
 	color: #a4a4a4;
+	padding: 16px;
+}
+
+#menu a:hover {
+	text-decoration: none;
+	border-bottom: 1px solid #1a9487;
+}
+
+#menu .active {
+	border-bottom: 1px solid #1a9487;
+}
+
+hr {
+	border-top: 1px solid #b4b4b4;
+}
+
+.form-control {
+	border-color: #a9a8a8;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	height: 24px;
+	color: #a9a8a8;
+	line-height: 26px;
+	padding: 0 5px;
 }
 
 .wide_img img {
@@ -161,4 +203,32 @@ footer a:hover {
 
 .rif {
 	margin-left: 20px;
+}
+
+.tab-title {
+	padding-bottom: 2px;
+	border-bottom: 1px solid #1a9487;
+	display: table;
+	margin: 10px auto 50px;
+}
+
+.content {
+	padding: 50px 0;
+}
+
+.bordered_img {
+	border-top: 1px solid #b4b4b4;
+	border-bottom: 1px solid #b4b4b4;
+	padding: 10px 0;
+	width: 100%;
+}
+
+.full_bordered_img {
+	border: 1px solid #b4b4b4;
+	padding: 10px;
+	width: 100%;
+}
+
+.full_width {
+	width: 100%;
 }
