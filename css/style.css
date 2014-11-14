@@ -6,11 +6,14 @@
 body {
 	font-family: "Garamond";
 	font-size: 16px;
-	color: #1a9487;
+	color: #8d8d8d;
+	letter-spacing: 1px;
+	width: 1349px;
+	margin: 0 auto;
 }
 
 header {
-	padding: 20px 0;
+	padding: 10px 0;
 }
 
 .container {
@@ -28,7 +31,7 @@ header {
 }
 
 .circle-small {
-	background-color: #a4a4a4;
+	background-color: #8d8d8d;
 	width: 4px;
 	height: 4px;
 	border-radius: 50%;
@@ -43,11 +46,11 @@ header {
 }
 
 .green_link {
-	color: #1a9487;
+	color: #8d8d8d;
 }
 
 .green_link:hover {
-	color: #1a9487;
+	color: #8d8d8d;
 }
 
 #menu .container {
@@ -55,30 +58,30 @@ header {
 }
 
 #menu a {
-	color: #a4a4a4;
-	padding: 16px;
+	color: #8d8d8d;
+	padding: 15px;
 }
 
 #menu a:hover {
 	text-decoration: none;
-	border-bottom: 1px solid #1a9487;
+	border-bottom: 1px solid #8d8d8d;
 }
 
 #menu .active {
-	border-bottom: 1px solid #1a9487;
+	border-bottom: 1px solid #8d8d8d;
 }
 
 hr {
-	border-top: 1px solid #b4b4b4;
+	border-top: 1px solid #8d8d8d;
 }
 
 .form-control {
-	border-color: #a9a8a8;
+	border-color: #8d8d8d;
 	border-radius: 0;
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
 	height: 24px;
-	color: #a9a8a8;
+	color: #8d8d8d;
 	line-height: 26px;
 	padding: 0 5px;
 }
@@ -175,7 +178,7 @@ hr {
 }
 
 footer {
-	background-color: #108978;
+	background-color: #0f8979;
 	padding: 20px 0;
 	color: #fff;
 }
@@ -207,7 +210,7 @@ footer a:hover {
 
 .tab-title {
 	padding-bottom: 2px;
-	border-bottom: 1px solid #1a9487;
+	border-bottom: 1px solid #8d8d8d;
 	display: table;
 	margin: 10px auto 50px;
 }
@@ -217,18 +220,31 @@ footer a:hover {
 }
 
 .bordered_img {
-	border-top: 1px solid #b4b4b4;
-	border-bottom: 1px solid #b4b4b4;
+	border-top: 1px solid #8d8d8d;
+	border-bottom: 1px solid #8d8d8d;
 	padding: 10px 0;
 	width: 100%;
 }
 
 .full_bordered_img {
-	border: 1px solid #b4b4b4;
+	border: 1px solid #8d8d8d;
 	padding: 10px;
 	width: 100%;
 }
 
 .full_width {
 	width: 100%;
+}
+
+.btn-gray {
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	background-color: #8d8d8d;
+	color: #fff;
+	font-size: 18px;
+}
+
+.btn-gray:hover {
+	color: #fff;
 }
