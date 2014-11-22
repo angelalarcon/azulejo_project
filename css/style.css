@@ -57,14 +57,43 @@ header {
 	cursor: default;
 }
 
-#menu a {
+#menu {
+	position: relative;
+}
+
+#menu .container>a {
 	color: #8d8d8d;
 	padding: 15px;
+	position: relative;
+	z-index: 10;
+}
+
+#menu a {
+	color: #8d8d8d;
 }
 
 #menu a:hover {
 	text-decoration: none;
 	border-bottom: 1px solid #8d8d8d;
+}
+
+.menu-content {
+	display: none;
+	width: 100%;
+	position: absolute;
+	top: 73px;
+	left: 0;
+	z-index: 2;
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 100px 0;
+}
+
+.menu-content:hover {
+	display: block;
+}
+
+#menu a:hover + .menu-content {
+	display: block;
 }
 
 #menu .active {
@@ -247,4 +276,24 @@ footer a:hover {
 
 .btn-gray:hover {
 	color: #fff;
+}
+
+.ring img {
+	margin: 40px 0;
+}
+
+.category-title p {
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	width: auto;
+	margin-top: 70px;
+	margin-left: -65px;
+	white-space: nowrap;
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+}
+
+.content {
+	padding-bottom: 50px;
 }
