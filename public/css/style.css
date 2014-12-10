@@ -1,0 +1,381 @@
+@font-face {
+	font-family: "Garamond";
+	src: url(../fonts/garamond.otf);
+}
+
+body {
+	font-family: "Garamond";
+	font-size: 16px;
+	color: #8d8d8d;
+	letter-spacing: 1px;
+	width: 1349px;
+	margin: 0 auto;
+}
+
+header {
+	padding: 10px 0;
+}
+
+.container {
+	width: 1170px;
+}
+
+#menu {
+	padding: 10px 0;
+	font-size: 18px;
+	height: 73px;
+}
+
+.hr {
+	margin: 0px auto 15px;
+}
+
+.circle-small {
+	background-color: #8d8d8d;
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	margin: 2px 40px;
+	display: inline-block;
+}
+
+.big-font {
+	font-size: 120%;
+}
+
+.green_link {
+	color: #8d8d8d;
+}
+
+.green_link:hover {
+	color: #8d8d8d;
+}
+
+#menu .container {
+	cursor: default;
+}
+
+#menu {
+	position: relative;
+}
+
+#menu .container>a {
+	color: #8d8d8d;
+	padding: 15px;
+	position: relative;
+	z-index: 10;
+}
+
+#menu a {
+	color: #8d8d8d;
+}
+
+#menu a:hover {
+	text-decoration: none;
+	border-bottom: 1px solid #8d8d8d;
+}
+
+.menu-content {
+	display: none;
+	width: 100%;
+	position: absolute;
+	top: 73px;
+	left: 0;
+	z-index: 2;
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 100px 0;
+}
+
+.menu-content:hover {
+	display: block;
+}
+
+#menu a:hover + .menu-content {
+	display: block;
+}
+
+#menu .active {
+	border-bottom: 1px solid #8d8d8d;
+}
+
+hr {
+	border-top: 1px solid #8d8d8d;
+}
+
+.form-control {
+	border-color: #8d8d8d;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	height: 24px;
+	color: #8d8d8d;
+	line-height: 26px;
+	padding: 0 5px;
+}
+
+.wide_img img {
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+.half_img {
+	width: 50%;
+	float: left;
+	text-align: center;
+	position: relative;
+}
+
+.half_img img,
+.big_half_img img {
+	width: 100%;
+	height: auto;
+}
+
+.wide_img .msg {
+	position: absolute;
+	right: 15%;
+	z-index: 1;
+	color: #fff;
+	top: 230px;
+}
+
+.half_img .msg {
+	position: absolute;
+	z-index: 1;
+	color: #fff;
+	top: 230px;
+	margin: 0 auto;
+	left: 50%;
+	width: 200px;
+	margin-left: -100px;
+}
+
+.big_half_img .msg {
+	position: absolute;
+	z-index: 1;
+	color: #fff;
+	top: 80px;
+	margin: 0 auto;
+	left: 50%;
+	width: 300px;
+	margin-left: -150px;
+}
+
+.big_half_img .msg h3,
+.half_img .msg h3,
+.wide_img .msg h3 {
+	margin: 0;
+}
+
+.big_half_img .msg hr,
+.half_img .msg hr,
+.wide_img .msg hr {
+	margin: 10px -20px;
+}
+
+.big_half_img {
+	position: relative;
+	float: left;
+	width: 75%;
+}
+
+.small_half_img {
+	float: left;
+	width: 25%;
+	background-color: #7F9592;
+	padding: 70px 0;
+	height: 270px;
+	color: #fff;
+}
+
+.relative {
+	position: relative;
+}
+
+.fila,
+.fila-2 {
+	position: relative;
+	overflow: hidden;
+	height: 500px;
+}
+
+.fila-2 {
+	height: 270px;
+}
+
+footer {
+	background-color: #0f8979;
+	padding: 20px 0;
+	color: #fff;
+}
+
+footer hr {
+	margin-top: 0;
+}
+
+.redes {
+	margin: 0 10px;
+}
+
+footer .circle-small {
+	background-color: #fff;
+	margin: 2px 30px;
+}
+
+footer a {
+	color: #fff;
+}
+
+footer a:hover {
+	color: #fff;
+}
+
+.rif {
+	margin-left: 20px;
+}
+
+.tab-title {
+	padding-bottom: 2px;
+	border-bottom: 1px solid #8d8d8d;
+	display: table;
+	margin: 10px auto 50px;
+}
+
+.content {
+	padding: 50px 0;
+}
+
+.bordered_img {
+	border-top: 1px solid #8d8d8d;
+	border-bottom: 1px solid #8d8d8d;
+	padding: 10px 0;
+	width: 100%;
+}
+
+.full_bordered_img {
+	border: 1px solid #8d8d8d;
+	padding: 10px;
+	width: 100%;
+}
+
+.full_width {
+	width: 100%;
+}
+
+.btn-gray {
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	background-color: #8d8d8d;
+	color: #fff;
+	font-size: 18px;
+}
+
+.btn-gray:hover {
+	color: #fff;
+}
+
+.ring img {
+	margin: 40px 0;
+}
+
+.category-title p {
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	width: auto;
+	margin-top: 70px;
+	margin-left: -65px;
+	white-space: nowrap;
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+}
+
+.content {
+	padding-bottom: 50px;
+}
+
+.nosotros_img {
+    width: 279px;
+    height: 186px;
+    margin: 0 auto;
+    background: #0f8979;
+    overflow: hidden;
+}
+
+.ring {
+    opacity: 1;
+    width: 100%;
+    transform-origin: 50% 100%;
+}
+
+/* ANIMATIONS */
+.wide_img, .half_img, .big_half_img {overflow: hidden; background: #0f8979}
+
+.wide_img *, .half_img *, .big_half_img *, .small_half_img *, .nosotros_img * {
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+}
+
+.ring * {
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -ms-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+
+.ring:hover img {
+    transform: translateY(0px) scale(1.5);
+    transition-delay: 0s;
+}
+
+.wide_img:hover .wide_img_title, .half_img:hover .half_img_title, .big_half_img:hover .big_half_img_title {
+    -webkit-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    transform: translateY(10px);
+}
+
+.wide_img:hover .wide_image_subtitle, .half_img:hover .half_img_subtitle, .big_half_img:hover .big_half_img_subtitle {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+
+.wide_img hr, .half_img hr, .big_half_img hr {
+    opacity:1;
+    filter: alpha(opacity=100);
+    margin: 10px auto!important;
+}
+
+.wide_img:hover hr, .half_img:hover hr, .big_half_img:hover hr {
+    width: 50%;
+    opacity:0;
+    filter: alpha(opacity=0);
+    margin: 10px auto!important
+}
+
+.wide_img:hover .wide_img_img, .half_img:hover .half_img_img, .big_half_img:hover .big_half_img_img, .nosotros_img:hover img {
+    opacity:0.7;
+    filter: alpha(opacity=70);
+}
+
+.wide_img:hover .wide_img_img img, .half_img:hover .half_img_img img, .big_half_img:hover .big_half_img_img img,
+.nosotros_img:hover img {
+    -webkit-transform: scale(1.07);
+    -ms-transform: scale(1.07);
+    transform: scale(1.07);
+}
+
+.small_half_img:hover * {
+    -webkit-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    transform: translateY(5px);
+}
+a, a:hover {text-decoration: none; color: inherit;}

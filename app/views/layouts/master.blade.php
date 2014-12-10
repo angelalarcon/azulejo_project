@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+
+    <style>
+        @section('styles')
+            body {
+                padding-top: 60px;
+            }
+        @show
+    </style>
+</head>
+
+<body>
+<!-- Navbar -->
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+
+            <a class="brand" href="#">Laravel</a>
+
+            <!-- Everything you want hidden at 940px or less, place within here -->
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <li><a href="{{{ URL::to('') }}}">Home</a></li>
+                </ul>
+            </div>
+
+            <div class="nav pull-right">
+                <ul class="nav">
+                    @if ( Auth::guest() )
+                    <li>{{ HTML::link('login', 'Login') }}</li>
+                    @else
+                    <li>{{ HTML::link('logout', 'Logout') }}</li>
+                    @endif
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Container -->
+<div class="container">
+
+    <!-- Success-Messages -->
+    @if ($message = Session::get('success'))
+    <div class="alert alert-success alert-block">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <h4>Success</h4>
+        {{{ $message }}}
+    </div>
+    @endif
+
+    <!-- Content -->
+    @yield('content')
+
+</div>
+
+<!-- Scripts are placed here -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
