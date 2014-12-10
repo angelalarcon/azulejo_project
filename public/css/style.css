@@ -66,6 +66,7 @@ header {
 	padding: 15px;
 	position: relative;
 	z-index: 10;
+    padding-bottom: 13px;
 }
 
 #menu a {
@@ -239,19 +240,15 @@ footer a:hover {
 
 .tab-title {
 	padding-bottom: 2px;
-	border-bottom: 1px solid #8d8d8d;
 	display: table;
 	margin: 10px auto 50px;
 }
 
 .content {
-	padding: 50px 0;
+	padding: 50px 0 1px 0;
 }
 
 .bordered_img {
-	border-top: 1px solid #8d8d8d;
-	border-bottom: 1px solid #8d8d8d;
-	padding: 10px 0;
 	width: 100%;
 }
 
@@ -292,10 +289,6 @@ footer a:hover {
 	white-space: nowrap;
 	text-align: center;
 	border-bottom: 1px solid #ccc;
-}
-
-.content {
-	padding-bottom: 50px;
 }
 
 .nosotros_img {
@@ -379,3 +372,7 @@ footer a:hover {
     transform: translateY(5px);
 }
 a, a:hover {text-decoration: none; color: inherit;}
+
+.row-form {
+    margin-bottom: 10px;
+}

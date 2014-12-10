@@ -37,7 +37,6 @@ return array(
     'CreateBannersHome' => $baseDir . '/app/database/migrations/2014_11_18_312549_create_banners_home.php',
     'CreateColletionTable' => $baseDir . '/app/database/migrations/2014_12_08_163541_create_colletion_table.php',
     'CreateColletionTypeTable' => $baseDir . '/app/database/migrations/2014_12_08_163551_create_colletion_type_table.php',
-    'CreateImagesNosotrosTable' => $baseDir . '/app/database/migrations/2014_12_08_164808_create_images_nosotros_table.php',
     'CreateProductosTable' => $baseDir . '/app/database/migrations/2014_12_27_013836_create_productos_table.php',
     'Crypt_AES' => $vendorDir . '/phpseclib/phpseclib/phpseclib/Crypt/AES.php',
     'Crypt_Base' => $vendorDir . '/phpseclib/phpseclib/phpseclib/Crypt/Base.php',

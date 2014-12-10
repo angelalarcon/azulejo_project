@@ -6,11 +6,9 @@ class NosotrosController extends BaseController {
     {
         try {
             $menus = Collections::all();
-            $images = ImagesNosotros::orderBy('id', 'desc')->take(3)->get();
 
             return View::make('nosotros')->with('page', '/nosotros')
-                ->with('menu', $menus)
-                ->with('images', $images);
+                ->with('menu', $menus);
 
         }
         catch(Exception $e)
