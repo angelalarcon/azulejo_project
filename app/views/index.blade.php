@@ -26,7 +26,7 @@
             <hr>
             <h3 class="half_img_subtitle"><em>Azulejo Jewels</em></h3>
         </div>
-        <a href="#" class="half_img_img">
+        <a href="<?= url('/nosotros'); ?>" class="half_img_img">
             <img src="{{ asset('uploads/banners_home') }}/{{ $banners['ci']->banner }}" alt="">
         </a>
     </div>
