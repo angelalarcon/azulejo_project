@@ -58,8 +58,10 @@
         </a>
     </div>
     <div class="small_half_img text-center">
-        <a href="<?= url('contactanos'); ?>"><img src="img/location-icon.png" alt=""></a>
-        <h3><a href="<?= url('contactanos'); ?>">NUESTRA<br>UBICACIÓN</a></h3>
+        <div class="ubicacion">
+            <a href="<?= url('contactanos'); ?>"><img src="img/location-icon.png" alt=""></a>
+            <h3><a href="<?= url('contactanos'); ?>">NUESTRA<br>UBICACIÓN</a></h3>
+        </div>
     </div>
 </div>
 @endif

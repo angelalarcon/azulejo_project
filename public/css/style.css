@@ -366,10 +366,10 @@ footer a:hover {
     transform: scale(1.07);
 }
 
-.small_half_img:hover * {
-    -webkit-transform: translateY(5px);
-    -ms-transform: translateY(5px);
-    transform: translateY(5px);
+.small_half_img:hover .ubicacion {
+    -webkit-transform: translateY(15px);
+    -ms-transform: translateY(15px);
+    transform: translateY(15px);
 }
 a, a:hover {text-decoration: none; color: inherit;}
 
