@@ -245,7 +245,7 @@ footer a:hover {
 }
 
 .content {
-	padding: 50px 0 1px 0;
+	padding: 50px 0 0 0;
 }
 
 .bordered_img {
@@ -375,4 +375,12 @@ a, a:hover {text-decoration: none; color: inherit;}
 
 .row-form {
     margin-bottom: 10px;
+}
+
+#logo_top {
+    margin-top: 20px;
+}
+
+.maniapure {
+    margin-bottom: 30px;
 }

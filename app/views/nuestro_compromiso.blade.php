@@ -28,7 +28,7 @@
             Estudiar la situación socioeconómica, medica-biológica, cultural y productiva de la región, para identificar maneras de intervenir adecuadamente en la solución de los problemas, al igual que para crear lineamientos que permitan medir el impacto y los resultados.
         </li>
     </ul>
-    <p class="text-center big-font">
+    <p class="text-center big-font maniapure">
         Para más información:<br>
         <a class="green_link" href="www.maniapure.org" target="_blank"><strong>www.maniapure.org</strong></a>
     </p>

@@ -36,7 +36,7 @@
 
 <header class="text-center">
     <a href="/">
-        <img src="{{asset('img/logo.png')}}">
+        <img src="{{asset('img/logo.png')}}" id="logo_top">
     </a>
 </header>
 
