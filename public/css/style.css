@@ -309,14 +309,14 @@ footer a:hover {
 .wide_img, .half_img, .big_half_img {overflow: hidden; background: #0f8979}
 
 .wide_img *, .half_img *, .big_half_img *, .small_half_img *, .nosotros_img * {
-    -webkit-transition: all 0.6s ease-out;
-    -moz-transition: all 0.6s ease-out;
-    -ms-transition: all 0.6s ease-out;
-    -o-transition: all 0.6s ease-out;
-    transition: all 0.6s ease-out;
+    -webkit-transition: all 2s ease-out;
+    -moz-transition: all 2s ease-out;
+    -ms-transition: all 2s ease-out;
+    -o-transition: all 2s ease-out;
+    transition: all 2s ease-out;
 }
 
-.ring * {
+/*.ring * {
     -webkit-transition: all 0.4s ease-out;
     -moz-transition: all 0.4s ease-out;
     -ms-transition: all 0.4s ease-out;
@@ -327,7 +327,7 @@ footer a:hover {
 .ring:hover img {
     transform: translateY(0px) scale(1.5);
     transition-delay: 0s;
-}
+}*/
 
 .wide_img:hover .wide_img_title, .half_img:hover .half_img_title, .big_half_img:hover .big_half_img_title {
     -webkit-transform: translateY(10px);
