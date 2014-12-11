@@ -3,7 +3,7 @@
 @section('content')
 <div class="container content">
     @foreach($collection->collectionsType as $type)
-        @if($type->productos)
+        @if(count($type->productos) > 0)
         <div class="row">
             <div class="col-md-1">
                 <div class="category-title">
