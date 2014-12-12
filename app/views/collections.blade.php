@@ -57,14 +57,14 @@
             position: absolute;
         }
         .modal h3 {
-            border-bottom: 2px solid #8d8d8d;
+            border-bottom: 1px solid #8d8d8d;
             max-width: 430px;
             margin: 0 auto;
             padding-bottom: 13px;
             margin-bottom: 20px;
         }
         .modal p {
-            margin-top: 30px;
+            margin-top: 10px;
         }
         .modal .close {
             position: absolute;
