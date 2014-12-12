@@ -23,9 +23,8 @@ class ContactoController extends BaseController {
             $rules = array(
                 'nombre' => 'Required',
                 'correo' => 'Required|Email',
-                'apellido' => 'Required',
-                'empresa' => 'Required',
-                'comentario' => 'Required'
+                'comentario' => 'Required',
+                'telefono' => 'Required'
             );
 
             $v = Validator::make(Input::get(), $rules);
@@ -37,14 +36,12 @@ class ContactoController extends BaseController {
             } else {
                 Mail::send('emails.contacto', Input::get(), function($message)
                 {
-                    $message->from(Input::get('correo'), Input::get('nombre') . ' ' . Input::get('apellido'));
-                    $message->to('enydrueda@gmail.com', 'Pedidos Dispufil')->subject('Formulario de contacto website Dispufil');
+                    $message->from(Input::get('correo'), Input::get('nombre'));
+                    $message->to('enydrueda@gmail.com', 'Contacto página')->subject('Formulario de contacto website');
                     $message->comentario = Input::get('comentario');
                     $message->telefono = Input::get('telefono');
                     $message->correo = Input::get('correo');
                     $message->nombre = Input::get('nombre');
-                    $message->apellido = Input::get('apellido');
-                    $message->empresa = Input::get('empresa');
                 });
 
                 return Response::json(array('success' => true), 200);

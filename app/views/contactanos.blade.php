@@ -11,29 +11,30 @@
     <hr>
     <div class="row">
         <div class="col-md-6">
+        <form id="contact_form" action="<?= url('/api/contacto'); ?>" method="post">
             <div class="row row-form">
                 <div class="col-md-4">Nombre *</div>
                 <div class="col-md-4">
-                    <input class="form-control" type="text">
+                    <input class="form-control" type="text" name="nombre" id="nombre" required="required">
                 </div>
             </div>
             <div class="row row-form">
                 <div class="col-md-4">Teléfono *</div>
                 <div class="col-md-4">
-                    <input class="form-control" type="text">
+                    <input class="form-control" type="text" name="telefono" id="telefono" required="required">
                 </div>
             </div>
             <div class="row row-form">
                 <div class="col-md-4">Correo electrónico *</div>
                 <div class="col-md-4">
-                    <input class="form-control" type="text">
+                    <input class="form-control" type="email" name="correo" id="correo" required="required">
                 </div>
             </div>
             <div class="row row-form">
                 <div class="col-md-4">Requerimiento *</div>
                 <div class="col-md-6">
-                    <p><textarea class="form-control" cols="30" rows="10"></textarea></p>
-                    <a href="#" class="btn btn-gray btn-block">Envíar</a>
+                    <p><textarea class="form-control" cols="30" rows="10" name="comentario" id="comentario" required="required"></textarea></p>
+                    <button href="#" class="btn btn-gray btn-block">Envíar</button>
                 </div>
             </div>
             <div class="row row-form">
@@ -52,6 +53,7 @@
                 <div class="col-md-6">9:00am a 7:00pm</div>
                 <div class="col-md-6">Nivel 3, Local X</div>
             </div>
+        </form>
         </div>
         <div class="col-md-6">
             <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1961.7184671279754!2d-66.8714449583246!3d10.466180296153286!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sve!4v1417222955564" width="600" height="450" frameborder="0" style="border:0"></iframe>
@@ -74,6 +76,8 @@
 <script type="text/javascript">
     $('#contact_form').submit(function (e) {
         e.preventDefault();
+        $("form")[0].checkValidity();
+
         var data = {};
         var $body = $('body');
 
