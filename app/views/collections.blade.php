@@ -55,8 +55,8 @@
             margin-top: 190px;
         }
         .modal h3 {
-            border-bottom: 1px solid #8d8d8d;
-            max-width: 80%;
+            border-bottom: 2px solid #8d8d8d;
+            max-width: 90%;
             margin: 0 auto;
             padding-bottom: 13px;
             margin-bottom: 20px;
@@ -71,7 +71,7 @@
                 <div class="modal-body">
                     <div class="pull-left text-center">
                         <h3></h3>
-                        <img src="" height="85">
+                        <img src="" height="100">
                         <p></p>
                     </div>
                     <div class="pull-right">
