@@ -64,11 +64,18 @@
         .modal p {
             margin-top: 30px;
         }
+        .modal .close {
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #797979;
+        }
     </style>
     <div class="modal fade collection">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
                     <div class="pull-left text-center">
                         <h3>{{ $producto->title }}</h3>
                         <img src="{{ asset('uploads/productos') }}/{{ $producto->img }}" height="100">
