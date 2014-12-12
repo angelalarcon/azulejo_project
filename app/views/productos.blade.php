@@ -69,6 +69,7 @@
             left: 10px;
             top: 10px;
             color: #363636;
+            font-size: 25px;
         }
     </style>
     <div class="modal fade collection">

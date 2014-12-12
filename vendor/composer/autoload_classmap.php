@@ -8,6 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'AddCollectionBannerHome' => $baseDir . '/app/database/migrations/2014_12_09_014602_add_collection_banner_home.php',
     'AddDescriptionImg' => $baseDir . '/app/database/migrations/2014_12_12_165520_add_description_img.php',
+    'AddDescriptionProductosBig' => $baseDir . '/app/database/migrations/2014_12_12_203247_add_description_productos_big.php',
     'AuthController' => $baseDir . '/app/controllers/AuthController.php',
     'BannersHome' => $baseDir . '/app/models/BannersHome.php',
     'BaseController' => $baseDir . '/app/controllers/BaseController.php',
@@ -1005,6 +1006,7 @@ return array(
     'Predis\\Transaction\\AbortedMultiExecException' => $vendorDir . '/predis/predis/lib/Predis/Transaction/AbortedMultiExecException.php',
     'Predis\\Transaction\\MultiExecContext' => $vendorDir . '/predis/predis/lib/Predis/Transaction/MultiExecContext.php',
     'Productos' => $baseDir . '/app/models/Productos.php',
+    'ProductosController' => $baseDir . '/app/controllers/ProductosController.php',
     'Psr\\Log\\AbstractLogger' => $vendorDir . '/psr/log/Psr/Log/AbstractLogger.php',
     'Psr\\Log\\InvalidArgumentException' => $vendorDir . '/psr/log/Psr/Log/InvalidArgumentException.php',
     'Psr\\Log\\LogLevel' => $vendorDir . '/psr/log/Psr/Log/LogLevel.php',

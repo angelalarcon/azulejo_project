@@ -32,6 +32,12 @@ return array(
                 return $value!=''?"<img src='/uploads/description_productos/$value' height='100' />":'';
             },
         ),
+        'description_img_big' => array(
+            'title' => 'Imagen para la vista del producto',
+            'output' => function ($value) {
+                return $value!=''?"<img src='/uploads/description_productos_big/$value' height='100' />":'';
+            },
+        ),
         'description' => array(
             'title' => 'Descripción'
         ),
@@ -74,6 +80,17 @@ return array(
             'location' => public_path() .'/uploads/description_productos/',
             'sizes' => array(
                 array(855, 640, 'crop', public_path() . '/uploads/description_productos/', 100)
+            ),
+            'description' => 'La imagen debe meidr 855x640 px',
+            'size_limit' => 1,
+        ),
+        'description_img_big' => array(
+            'title' => 'Imagen para la vista del producto',
+            'type' => 'image',
+            'naming' => 'random',
+            'location' => public_path() .'/uploads/description_productos_big/',
+            'sizes' => array(
+                array(600, 500, 'crop', public_path() . '/uploads/description_productos_big/', 100)
             ),
             'description' => 'La imagen debe meidr 855x640 px',
             'size_limit' => 1,
