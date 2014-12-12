@@ -92,7 +92,7 @@ return array(
             'sizes' => array(
                 array(600, 500, 'crop', public_path() . '/uploads/description_productos_big/', 100)
             ),
-            'description' => 'La imagen debe meidr 855x640 px',
+            'description' => 'La imagen debe meidr 600x500 px',
             'size_limit' => 1,
         ),
         'description' => array(
