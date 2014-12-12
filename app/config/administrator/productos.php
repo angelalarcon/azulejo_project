@@ -37,12 +37,12 @@ return array(
         ),
         'collection' => array(
             'title' => 'Colección',
-            'relationship' => 'collections_type.collections',
+            'relationship' => 'collectionsType.collections',
             'select' => '(:table).title',
         ),
-        'collections_type' => array(
+        'collectionsType' => array(
             'title' => 'Sub colección',
-            'relationship' => 'collections_type',
+            'relationship' => 'collectionsType',
             'select' => '(:table).title',
         ),
     ),
@@ -82,7 +82,7 @@ return array(
             'title' => 'Descripcion',
             'type' => 'wysiwyg',
         ),
-        'collections_type' => array(
+        'collectionsType' => array(
             'title' => 'Colección',
             'type' => 'relationship',
             'name_field' => 'collection_title',
