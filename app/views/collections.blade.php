@@ -14,7 +14,9 @@
                 <div class="row">
                     @foreach($type->productos as $prod)
                     <div class="col-md-3 text-center">
-                        <a class="ring" href="#">
+                        <a class="ring" href="#" data-title="{{$prod->title}}" data-description="{{$prod->description}}"
+                                data-img="{{ asset('uploads/productos') }}/{{ $prod->img }}"
+                                data-description_img="{{ asset('uploads/description_productos') }}/{{ $prod->description_img }}">
                             <img src="{{ asset('uploads/productos') }}/{{ $prod->img }}" alt="{{ $prod->title }}" height="180">
                         </a>
                     </div>
@@ -83,6 +85,17 @@
 @endsection
 @section('js')
     <script type="text/javascript">
-        $('.modal').modal('show');
+        var $modal = $('.modal');
+
+        $('.ring').click(function(e) {
+            e.preventDefault();
+            var $this = $(this);
+            $modal.find('h3').html($this.data('title'));
+            $modal.find('.pull_left img').attr('src', $this.data('img'));
+            $modal.find('p').html($this.data('description'));
+            $modal.find('.pull-right img').attr('src', $this.data('description_img'));
+
+            $modal.modal('show');
+        });
     </script>
 @endsection

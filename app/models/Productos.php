@@ -32,6 +32,7 @@ class Productos extends Eloquent {
     public function delete ()
     {
         File::delete(public_path() . '/uploads/productos/' . $this->img);
+        File::delete(public_path() . '/uploads/description_productos/' . $this->description_img);
         return parent::delete();
     }
 }

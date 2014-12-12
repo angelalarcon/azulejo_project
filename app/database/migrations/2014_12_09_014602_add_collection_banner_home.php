@@ -19,11 +19,6 @@ class AddCollectionBannerHome extends Migration {
         });
 	}
 
-    public function collections()
-    {
-        return $this->belongsTo('Collections');
-    }
-
 	/**
 	 * Reverse the migrations.
 	 *
