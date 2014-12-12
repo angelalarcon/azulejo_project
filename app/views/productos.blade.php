@@ -66,9 +66,9 @@
         }
         .modal .close {
             position: absolute;
-            left: 0;
-            top: 0;
-            color: #797979;
+            left: 10px;
+            top: 10px;
+            color: #363636;
         }
     </style>
     <div class="modal fade collection">
