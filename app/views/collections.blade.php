@@ -70,12 +70,12 @@
             <div class="modal-content">
                 <div class="modal-body">
                     <div class="pull-left text-center">
-                        <h3>Oro Blanco Safiro Rosa</h3>
-                        <img src="{{ asset('uploads/productos/GNBWjsTMlMe7TDQgJOBaXg2cko94e1mj.png') }}" height="85">
-                        <p>Anillo de oro blanco 18K<br>Rubí y brillante de 1 punto.<br>Peso total: 20gr</p>
+                        <h3></h3>
+                        <img src="" height="85">
+                        <p></p>
                     </div>
                     <div class="pull-right">
-                        <img src="{{ asset('img/prueba_producto.png') }}" height="640">
+                        <img src="" height="640">
                     </div>
                 </div>
             </div>
@@ -91,7 +91,7 @@
             e.preventDefault();
             var $this = $(this);
             $modal.find('h3').html($this.data('title'));
-            $modal.find('.pull_left img').attr('src', $this.data('img'));
+            $modal.find('.pull-left img').attr('src', $this.data('img'));
             $modal.find('p').html($this.data('description'));
             $modal.find('.pull-right img').attr('src', $this.data('description_img'));
 
