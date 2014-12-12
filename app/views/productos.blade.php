@@ -51,12 +51,13 @@
             overflow: hidden;
         }
         .modal .pull-left {
-            width: 485px;
+            width: 580px;
             margin-top: 190px;
+            position: absolute;
         }
         .modal h3 {
             border-bottom: 2px solid #8d8d8d;
-            max-width: 90%;
+            max-width: 430px;
             margin: 0 auto;
             padding-bottom: 13px;
             margin-bottom: 20px;
