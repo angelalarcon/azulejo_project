@@ -19,6 +19,8 @@ Route::post('api/contacto', 'ContactoController@post');
 
 Route::get('/coleccion/{id}/{slug}/', 'CollectionsController@get')->where('id', '[0-9]+');
 
+Route::get('/coleccion/producto/{id}/{slug}/', 'ProductosController@get')->where('id', '[0-9]+');
+
 Route::get('/nosotros', 'NosotrosController@get');
 
 Route::get('/nuestro-compromiso', 'NuestroCompromisoController@get');

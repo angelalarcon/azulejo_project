@@ -70,12 +70,12 @@
             <div class="modal-content">
                 <div class="modal-body">
                     <div class="pull-left text-center">
-                        <h3></h3>
-                        <img src="" height="85">
-                        <p></p>
+                        <h3>{{ $producto->title }}</h3>
+                        <img src="{{ asset('uploads/productos') }}/{{ $producto->img }}" height="85">
+                        <p>{{ $producto->description }}</p>
                     </div>
                     <div class="pull-right">
-                        <img src="" height="640">
+                        <img src="{{ asset('uploads/description_productos') }}/{{ $producto->description_img }}" height="640">
                     </div>
                 </div>
             </div>
@@ -86,6 +86,7 @@
 @section('js')
     <script type="text/javascript">
         var $modal = $('.modal');
+        $modal.modal('show');
 
         $('.ring').click(function(e) {
             e.preventDefault();
