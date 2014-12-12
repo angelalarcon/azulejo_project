@@ -16,6 +16,7 @@
                     <div class="col-md-3 text-center">
                         <a class="ring" href="<?= url('/coleccion/producto/' . $prod->id . '/' . $prod->slugify() . '/') ?>" data-title="{{$prod->title}}" data-description="{{$prod->description}}"
                                 data-img="{{ asset('uploads/productos') }}/{{ $prod->img }}"
+                                data-img_big="{{ asset('uploads/description_productos_big') }}/{{ $prod->description_img_big }}"
                                 data-description_img="{{ asset('uploads/description_productos') }}/{{ $prod->description_img }}">
                             <img src="{{ asset('uploads/productos') }}/{{ $prod->img }}" alt="{{ $prod->title }}" height="180">
                         </a>
@@ -80,7 +81,7 @@
                     <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
                     <div class="pull-left text-center">
                         <h3></h3>
-                        <img src="" height="100">
+                        <img src="">
                         <p></p>
                     </div>
                     <div class="pull-right">
@@ -100,7 +101,7 @@
             e.preventDefault();
             var $this = $(this);
             $modal.find('h3').html($this.data('title'));
-            $modal.find('.pull-left img').attr('src', $this.data('img'));
+            $modal.find('.pull-left img').attr('src', $this.data('img_big'));
             $modal.find('p').html($this.data('description'));
             $modal.find('.pull-right img').attr('src', $this.data('description_img'));
 
