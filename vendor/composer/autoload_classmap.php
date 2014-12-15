@@ -7,8 +7,6 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'AddCollectionBannerHome' => $baseDir . '/app/database/migrations/2014_12_09_014602_add_collection_banner_home.php',
-    'AddDescriptionImg' => $baseDir . '/app/database/migrations/2014_12_12_165520_add_description_img.php',
-    'AddDescriptionProductosBig' => $baseDir . '/app/database/migrations/2014_12_12_203247_add_description_productos_big.php',
     'AuthController' => $baseDir . '/app/controllers/AuthController.php',
     'BannersHome' => $baseDir . '/app/models/BannersHome.php',
     'BaseController' => $baseDir . '/app/controllers/BaseController.php',
@@ -1624,6 +1622,7 @@ return array(
     'System_SSH_Agent_Identity' => $vendorDir . '/phpseclib/phpseclib/phpseclib/System/SSH/Agent.php',
     'TestCase' => $baseDir . '/app/tests/TestCase.php',
     'User' => $baseDir . '/app/models/User.php',
+    'UsersTables' => $baseDir . '/app/database/migrations/2014_12_15_134825_users_tables.php',
     'Whoops\\Exception\\ErrorException' => $vendorDir . '/filp/whoops/src/Whoops/Exception/ErrorException.php',
     'Whoops\\Exception\\Formatter' => $vendorDir . '/filp/whoops/src/Whoops/Exception/Formatter.php',
     'Whoops\\Exception\\Frame' => $vendorDir . '/filp/whoops/src/Whoops/Exception/Frame.php',
