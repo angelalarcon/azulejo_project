@@ -46,12 +46,12 @@
                 </div>
             </div>
             <div class="row row-form">
-                <div class="col-md-6">Lunes a Viernes</div>
-                <div class="col-md-6">Centro Comercial Santa Fe,</div>
+                <div class="col-md-6">Lunes a Sabados</div>
+                <div class="col-md-6" style="text-align: justify;">Caracas: Av. José María Vargas, CC Santa Fé, Nivel C3, Local 06, Urb. Santa Fé Norte<br>Barquisimeto: Carrera 5 entre calles 5 y 6, Urb. Nueva Segovia, Hotel Jirajara</div>
             </div>
             <div class="row row-form">
-                <div class="col-md-6">9:00am a 7:00pm</div>
-                <div class="col-md-6">Nivel 3, Local X</div>
+                <div class="col-md-6">10am a 7:00pm</div>
+                <div class="col-md-6"><strong>Tlf:</strong> 02129771954</div>
             </div>
         </form>
         </div>

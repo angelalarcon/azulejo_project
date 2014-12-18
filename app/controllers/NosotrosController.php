@@ -6,9 +6,10 @@ class NosotrosController extends BaseController {
     {
         try {
             $menus = Collections::all();
+            $nosotros_images = NosotrosImage::all();
 
             return View::make('nosotros')->with('page', '/nosotros')
-                ->with('menu', $menus);
+                ->with('menu', $menus)->with('nosotros_images', $nosotros_images);
 
         }
         catch(Exception $e)

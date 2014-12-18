@@ -1,5 +1,36 @@
 @extends('layouts.front')
 
+@section('css')
+    <link rel="stylesheet" href="{{asset('css/smoothDivScroll.css')}}">
+    <style>
+        #makeMeScrollable
+        {
+            width:100%;
+            height: 230px;
+            position: relative;
+        }
+
+        /* Replace the last selector for the type of element you have in
+           your scroller. If you have div's use #makeMeScrollable div.scrollableArea div,
+           if you have links use #makeMeScrollable div.scrollableArea a and so on. */
+        #makeMeScrollable div.scrollableArea img
+        {
+            position: relative;
+            float: left;
+            margin: 0;
+            padding: 0;
+            /* If you don't want the images in the scroller to be selectable, try the following
+               block of code. It's just a nice feature that prevent the images from
+               accidentally becoming selected/inverted when the user interacts with the scroller. */
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+        }
+    </style>
+@endsection
+
 @section('content')
 <div class="container content">
     <h4 class="tab-title text-center">NOSOTROS</h4>
@@ -16,13 +47,35 @@
         La Inspiración, creatividad y deseo de ayudar a la comunidad es lo que hace Azulejo Jewels una marca incomparable en el mercado Venezolano.
     </p>
 </div>
+
+
 <div class="container content">
     <div class="row">
         <div class="col-md-12 text-center">
-            <div>
-                <img src="{{ asset('img/nosotros.jpg') }}" alt="Nosotros">
+
+            <div id="makeMeScrollable">
+                @foreach($nosotros_images as $key => $n)
+                    <img src="{{ asset('uploads/nosotros') }}/{{ $n->photo }}" />
+                @endforeach
             </div>
         </div>
     </div>
 </div>
+
+<br>
+@endsection
+@section('js')
+    <script type="text/javascript" src="{{asset('js/jquery-ui-1.10.3.custom.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/jquery.mousewheel.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/jquery.kinetic.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/jquery.smoothdivscroll-1.3-min.js')}}"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("div#makeMeScrollable").smoothDivScroll({
+                autoScrollingMode: "onStart",
+                hotSpotScrollingStep: 5
+            });
+        });
+
+    </script>
 @endsection

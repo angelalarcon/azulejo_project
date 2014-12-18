@@ -39,6 +39,7 @@ return array(
     'CreateColletionTable' => $baseDir . '/app/database/migrations/2014_12_08_163541_create_colletion_table.php',
     'CreateColletionTypeTable' => $baseDir . '/app/database/migrations/2014_12_08_163551_create_colletion_type_table.php',
     'CreateProductosTable' => $baseDir . '/app/database/migrations/2014_12_27_013836_create_productos_table.php',
+    'CreateTableNosotros' => $baseDir . '/app/database/migrations/2014_12_18_055544_create_table_nosotros.php',
     'Crypt_AES' => $vendorDir . '/phpseclib/phpseclib/phpseclib/Crypt/AES.php',
     'Crypt_Base' => $vendorDir . '/phpseclib/phpseclib/phpseclib/Crypt/Base.php',
     'Crypt_Blowfish' => $vendorDir . '/phpseclib/phpseclib/phpseclib/Crypt/Blowfish.php',

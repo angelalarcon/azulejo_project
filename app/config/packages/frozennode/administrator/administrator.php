@@ -41,7 +41,7 @@ return array(
      * 		'Analytics' => array('E-Commerce' => 'page.ecommerce.analytics'),
      *	)
      */
-    'menu' => array('banners_home', 'collections', 'collections_types', 'productos'),
+    'menu' => array('banners_home', 'collections', 'collections_types', 'productos','nosotros_image'),
     /**
      * The permission option is the highest-level authentication check that lets you define a closure that should return true if the current user
      * is allowed to view the admin section. Any "falsey" response will send the user back to the 'login_path' defined below.

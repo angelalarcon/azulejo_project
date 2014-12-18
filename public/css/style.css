@@ -309,7 +309,7 @@ footer a:hover {
     -moz-transition: all 2s ease-out;
     -ms-transition: all 2s ease-out;
     -o-transition: all 2s ease-out;
-    transition: all 2s ease-out;
+    transition: all 0.5s ease-out;
 }
 
 /*.ring * {
@@ -357,9 +357,9 @@ footer a:hover {
 
 .wide_img:hover .wide_img_img img, .half_img:hover .half_img_img img, .big_half_img:hover .big_half_img_img img,
 .nosotros_img:hover img {
-    -webkit-transform: scale(1.07);
-    -ms-transform: scale(1.07);
-    transform: scale(1.07);
+    -webkit-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    transform: scale(1.01);
 }
 
 .small_half_img:hover .ubicacion {

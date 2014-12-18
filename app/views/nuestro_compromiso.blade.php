@@ -3,12 +3,13 @@
 @section('content')
 <div class="container content">
     <h4 class="tab-title text-center">NUESTRO COMPROMISO</h4>
-    <p>
-        Azulejo Jewels es un orgulloso miembro de la familia Maniapure.<br>
-        Maníapure promueve el desarrollo integral de la región de Maniapure, bajo un esquema de operación abierto al establecimiento de alianzas interinstitucionales que permitan la articulación de esfuerzos y recursos para mejorar la calidad de vida de los pobladores.
-    </p>
-    <p><strong>Tienen como objetivo:</strong></p>
+
     <ul>
+        <p>
+            Azulejo Jewels es un orgulloso miembro de la familia Maniapure.<br>
+            Maníapure promueve el desarrollo integral de la región de Maniapure, bajo un esquema de operación abierto al establecimiento de alianzas interinstitucionales que permitan la articulación de esfuerzos y recursos para mejorar la calidad de vida de los pobladores.
+        </p>
+        <p><strong>Tienen como objetivo:</strong></p>
         <li>
             Prestar servicios de atención médica, dental y sanitaria para colaborar con la mejora de las condiciones de salud de la población de la región.
         </li>
