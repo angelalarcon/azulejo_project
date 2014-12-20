@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'AddCollectionBannerHome' => $baseDir . '/app/database/migrations/2014_12_09_014602_add_collection_banner_home.php',
+    'AddColumnUrlToBannersHome' => $baseDir . '/app/database/migrations/2014_12_20_041437_add_column_url_to_banners_home.php',
     'AuthController' => $baseDir . '/app/controllers/AuthController.php',
     'BannersHome' => $baseDir . '/app/models/BannersHome.php',
     'BaseController' => $baseDir . '/app/controllers/BaseController.php',
@@ -554,6 +555,7 @@ return array(
     'Net_SSH2' => $vendorDir . '/phpseclib/phpseclib/phpseclib/Net/SSH2.php',
     'Normalizer' => $vendorDir . '/patchwork/utf8/class/Normalizer.php',
     'NosotrosController' => $baseDir . '/app/controllers/NosotrosController.php',
+    'NosotrosImage' => $baseDir . '/app/models/NosotrosImage.php',
     'NuestroCompromisoController' => $baseDir . '/app/controllers/NuestroCompromisoController.php',
     'PHPParser_Autoloader' => $vendorDir . '/nikic/php-parser/lib/PHPParser/Autoloader.php',
     'PHPParser_Builder' => $vendorDir . '/nikic/php-parser/lib/PHPParser/Builder.php',

@@ -41,6 +41,9 @@ return array(
             'relationship' => 'collections',
             'select' => 'title',
         ),
+        'url' => array(
+            'title' => 'Url'
+        ),
     ),
 
     /**
@@ -75,6 +78,10 @@ return array(
             'title' => 'Colección',
             'type' => 'relationship',
             'name_field' => 'title'
+        ),
+        'url' => array(
+            'title' => 'Url',
+            'type' => 'text',
         ),
     ),
 

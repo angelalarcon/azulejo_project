@@ -18,7 +18,7 @@ return array(
      * The display columns
      */
     'columns' => array(
-        'banner' => array(
+        'photo' => array(
             'title' => 'Foto',
             'output' => '<img src="/uploads/nosotros/(:value)" height="100" />'
         )
