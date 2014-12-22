@@ -81,8 +81,8 @@
         <div class="row">
             <div class="col-md-6">
                 Siguenos AzulejoJewels
-                <a class="redes" href="#"><img src="{{ asset('img/facebook-icon.png') }}" alt=""></a>
-                <a class="redes" href="#"><img src="{{ asset('img/instagram-icon.png') }}" alt=""></a>
+                <a class="redes" href="https://www.facebook.com/AzulejoJewels?ref=ts&fref=ts"><img src="{{ asset('img/facebook-icon.png') }}" alt=""></a>
+                <a class="redes" href="http://instagram.com/azulejojewels"><img src="{{ asset('img/instagram-icon.png') }}" alt=""></a>
                 <a class="redes" href="#"><img src="{{ asset('img/twitter-icon.png') }}" alt=""></a>
             </div>
             <div class="col-md-6 text-right">
@@ -92,7 +92,7 @@
                 <div class="circle-small"></div>
                 <a href="<?= url('/contactanos/'); ?>">Contáctanos</a>
                 <p><small>PRIVACIDAD | TERMINOS LEGALES</small></p>
-                <p>Compañia CA. <span class="rif">J-123456-7</span></p>
+                <p>Alvaro Gioielli, C.A. <span class="rif">J-31053209-5</span></p>
             </div>
         </div>
     </div>

@@ -31,7 +31,8 @@
     <style type="text/css">
         .modal-dialog {
             width: 100%;
-            margin-top: 284px;
+            /*margin-top: 284px;*/
+            margin-top: 10%;
         }
         .modal-content {
             border-radius: 0;
@@ -43,17 +44,17 @@
             background: #fff;
         }
         .modal-body {
-            height: 640px;
+            height: 600px;
             background: rgba(175, 217, 218, .9);
             padding: 0;
         }
         .modal .pull-right {
-            width: 855px;
+            width: 800px;
             overflow: hidden;
         }
         .modal .pull-left {
             width: 580px;
-            margin-top: 190px;
+            margin-top: 150px;
             position: absolute;
         }
         .modal h3 {
@@ -71,7 +72,7 @@
             left: 10px;
             top: 10px;
             color: #363636;
-            font-size: 25px;
+            font-size: 32px;
         }
     </style>
     <div class="modal fade collection">
@@ -85,7 +86,7 @@
                         <p></p>
                     </div>
                     <div class="pull-right">
-                        <img src="" height="640">
+                        <img src="" height="600">
                     </div>
                 </div>
             </div>

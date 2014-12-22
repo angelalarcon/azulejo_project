@@ -43,7 +43,7 @@
             background: #fff;
         }
         .modal-body {
-            height: 640px;
+            height: 600px;
             background: rgba(175, 217, 218, .9);
             padding: 0;
         }
@@ -71,7 +71,7 @@
             left: 10px;
             top: 10px;
             color: #363636;
-            font-size: 25px;
+            font-size: 30px;
         }
     </style>
     <div class="modal fade collection">
@@ -85,7 +85,7 @@
                         <p>{{ $producto->description }}</p>
                     </div>
                     <div class="pull-right">
-                        <img src="{{ asset('uploads/description_productos') }}/{{ $producto->description_img }}" height="640">
+                        <img src="{{ asset('uploads/description_productos') }}/{{ $producto->description_img }}" height="600">
                     </div>
                 </div>
             </div>
