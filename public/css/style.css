@@ -380,3 +380,10 @@ a, a:hover {text-decoration: none; color: inherit;}
 .maniapure {
     margin-bottom: 30px;
 }
+div.scrollingHotSpotRightVisible, div.scrollingHotSpotLeft {
+	width: 74px !important;
+	height: 189px !important;
+}
+
+div.scrollingHotSpotLeft {left: -76px !important;}
+div.scrollingHotSpotRightVisible {right: -76px !important;}

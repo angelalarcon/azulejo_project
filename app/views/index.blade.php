@@ -4,10 +4,25 @@
 <style type="text/css">
 
     .modal-body {
-        width: 660px;
-        height: 520px;
+        min-width: 855px;
         background: rgba(175, 217, 218, .9);
-        padding: 0;
+        padding: 12px;
+    }
+    .modal-dialog {
+        min-width: 855px!important;
+    }
+    .modal .close {
+        position: absolute;
+        left: 10px;
+        top: 0;
+        color: #363636;
+        font-size: 32px;
+    }
+    .modal-content {
+        border-radius: 0;
+        box-shadow: none;
+        border: none;
+        background: none;
     }
 </style>
 @stop
@@ -66,8 +81,9 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
                         <br>
-                        <iframe width="640" height="480" src="{{ $banners['cd']->url }}" frameborder="0" allowfullscreen></iframe>
+                        <iframe width="920" height="650" src="{{ $banners['cd']->url }}" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -95,7 +111,7 @@
     </div>
     <div class="small_half_img text-center">
         <div class="ubicacion">
-            <a href="<?= url('contactanos'); ?>"><img src="img/location-icon.png" alt=""></a>
+            <a href="<?= url('contactanos'); ?>"><img src="{{ asset('img/location-icon.png') }}" alt=""></a>
             <h3><a href="<?= url('contactanos'); ?>">NUESTRA<br>UBICACIÓN</a></h3>
         </div>
     </div>
@@ -104,12 +120,17 @@
 @stop
 
 @section('js')
+<script type="text/javascript" src="{{ asset('js/fluidvids.js') }}"></script>
 <script type="text/javascript">
     var $modal = $('.modal');
 
     $('.link_video').click(function(e) {
         e.preventDefault();
         $("#youtubeModal").modal('show');
+    });
+    fluidvids.init({
+        selector: ['iframe', 'object'], // runs querySelectorAll()
+        players: ['www.youtube.com', 'player.vimeo.com'] // players to support
     });
 </script>
 @endsection

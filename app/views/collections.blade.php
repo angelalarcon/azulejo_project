@@ -31,8 +31,6 @@
     <style type="text/css">
         .modal-dialog {
             width: 100%;
-            /*margin-top: 284px;*/
-            margin-top: 10%;
         }
         .modal-content {
             border-radius: 0;
