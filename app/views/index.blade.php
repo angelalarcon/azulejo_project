@@ -64,15 +64,16 @@
     @endif
     @if($banners['cd'])
     <div class="half_img">
-        <div class="msg text-center">
-            <a class='link_video' href="{{ $banners['cd']->url }}" class="half_img_img">
+        <a class='link_video half_img_img' href="{{ $banners['cd']->url }}">
+            <div class="msg text-center">
                 <h3 class="half_img_title">FASHION FILM</h3>
                 <hr>
                 <h3 class="half_img_subtitle"><em>Ver video</em></h3>
-            </a>
-        </div>
-        <a class='link_video' href="{{ $banners['cd']->url }}" class="half_img_img">
-            <img src="{{ asset('uploads/banners_home') }}/{{ $banners['cd']->banner }}" alt="">
+            </div>
+            <video preload="auto" loop="">
+                <source src="{{ asset('img/Azulejo.m4v') }}" type="video/mp4">
+            </video>
+            <img src="{{ asset('uploads/banners_home') }}/{{ $banners['cd']->banner }}" alt="" class="video_img">
         </a>
 
         <!-- Modal -->
@@ -123,8 +124,29 @@
 <script type="text/javascript" src="{{ asset('js/fluidvids.js') }}"></script>
 <script type="text/javascript">
     var $modal = $('.modal');
+    var $link_video = $('.link_video');
+    var $cover = $('.video_img');
 
-    $('.link_video').click(function(e) {
+    $link_video.hover(function() {
+                var video = $(this).find("video");
+
+                if (video.length != 0) {
+                    video[0].currentTime = 0;
+                    video[0].play();
+                    $cover.fadeOut(1000);
+                }
+            }, function() {
+                var video = $(this).find("video");
+
+                if (video.length != 0) {
+                    video[0].currentTime = 0;
+                    video[0].pause();
+                    $cover.fadeIn(1000);
+                }
+            }
+    );
+
+    $link_video.click(function(e) {
         e.preventDefault();
         $("#youtubeModal").modal('show');
     });

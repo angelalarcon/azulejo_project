@@ -387,3 +387,9 @@ div.scrollingHotSpotRightVisible, div.scrollingHotSpotLeft {
 
 div.scrollingHotSpotLeft {left: -76px !important;}
 div.scrollingHotSpotRightVisible {right: -76px !important;}
+
+.video_img {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
