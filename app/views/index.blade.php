@@ -71,7 +71,7 @@
                 <h3 class="half_img_subtitle"><em>Ver video</em></h3>
             </div>
             <video preload="auto" loop="">
-                <source src="{{ asset('img/Azulejo.m4v') }}" type="video/mp4">
+                <source src="{{ asset('img/azul.m4v') }}" type="video/mp4">
             </video>
             <img src="{{ asset('uploads/banners_home') }}/{{ $banners['cd']->banner }}" alt="" class="video_img">
         </a>
@@ -132,6 +132,7 @@
 
                 if (video.length != 0) {
                     video[0].currentTime = 0;
+                    video[0].volume = 0;
                     video[0].play();
                     $cover.fadeOut(1000);
                 }
@@ -140,6 +141,7 @@
 
                 if (video.length != 0) {
                     video[0].currentTime = 0;
+                    video[0].volume = 0;
                     video[0].pause();
                     $cover.fadeIn(1000);
                 }
