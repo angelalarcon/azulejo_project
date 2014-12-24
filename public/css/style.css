@@ -85,7 +85,7 @@ header {
 	top: 73px;
 	left: 0;
 	z-index: 2;
-	background-color: rgba(255, 255, 255, 0.8);
+	background-color: rgba(255, 255, 255, 0.95);
 	padding: 100px 0;
 }
 
@@ -312,18 +312,18 @@ footer a:hover {
     transition: all 0.5s ease-out;
 }
 
-/*.ring * {
-    -webkit-transition: all 0.4s ease-out;
-    -moz-transition: all 0.4s ease-out;
-    -ms-transition: all 0.4s ease-out;
-    -o-transition: all 0.4s ease-out;
-    transition: all 0.4s ease-out;
+.ring * {
+    -webkit-transition: all 0.8s ease-out;
+    -moz-transition: all 0.8s ease-out;
+    -ms-transition: all 0.8s ease-out;
+    -o-transition: all 0.8s ease-out;
+    transition: all 0.8s ease-out;
 }
 
 .ring:hover img {
-    transform: translateY(0px) scale(1.5);
+    transform: translateY(0px) scale(1.05);
     transition-delay: 0s;
-}*/
+}
 
 .wide_img:hover .wide_img_title, .half_img:hover .half_img_title, .big_half_img:hover .big_half_img_title {
     -webkit-transform: translateY(10px);

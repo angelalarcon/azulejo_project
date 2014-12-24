@@ -14,7 +14,9 @@
                 <div class="row">
                     @foreach($type->productos as $prod)
                     <div class="col-md-3 text-center">
-                        <a class="ring" href="<?= url('/coleccion/producto/' . $prod->id . '/' . $prod->slugify() . '/') ?>" data-title="{{$prod->title}}" data-description="{{$prod->description}}"
+                        <a class="ring" href="<?= url('/coleccion/producto/' . $prod->id . '/' . $prod->slugify() . '/') ?>"
+                                data-title="{{$prod->title}}"
+                                data-description="{{ htmlentities($prod->description) }}"
                                 data-img="{{ asset('uploads/productos') }}/{{ $prod->img }}"
                                 data-img_big="{{ asset('uploads/description_productos_big') }}/{{ $prod->description_img_big }}"
                                 data-description_img="{{ asset('uploads/description_productos') }}/{{ $prod->description_img }}">

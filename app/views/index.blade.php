@@ -70,7 +70,7 @@
                 <hr>
                 <h3 class="half_img_subtitle"><em>Ver video</em></h3>
             </div>
-            <video preload="auto" loop="">
+            <video preload="auto" loop="" height="511">
                 <source src="{{ asset('img/azul.m4v') }}" type="video/mp4">
             </video>
             <img src="{{ asset('uploads/banners_home') }}/{{ $banners['cd']->banner }}" alt="" class="video_img">

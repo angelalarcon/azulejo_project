@@ -56,8 +56,7 @@
         </form>
         </div>
         <div class="col-md-6">
-            <!--<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1961.7184671279754!2d-66.8714449583246!3d10.466180296153286!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sve!4v1417222955564" width="600" height="450" frameborder="0" style="border:0"></iframe> -->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3923.4339400043855!2d-66.871698!3d10.466417!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a5891115050ab%3A0x628e60f44b6af6cf!2sFarmatodo+C.C.+Santa+Fe!5e0!3m2!1ses!2sve!4v1419131812091" width="600" height="450" frameborder="0" style="border:0"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1961.7197921085256!2d-66.87144315028283!3d10.46597080500197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sve!4v1419384019485" width="600" height="450" frameborder="0" style="border:0"></iframe>
         </div>
     </div>
 </div>

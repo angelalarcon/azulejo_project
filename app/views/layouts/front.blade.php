@@ -83,7 +83,6 @@
                 Siguenos AzulejoJewels
                 <a class="redes" href="https://www.facebook.com/AzulejoJewels?ref=ts&fref=ts"><img src="{{ asset('img/facebook-icon.png') }}" alt=""></a>
                 <a class="redes" href="http://instagram.com/azulejojewels"><img src="{{ asset('img/instagram-icon.png') }}" alt=""></a>
-                <a class="redes" href="#"><img src="{{ asset('img/twitter-icon.png') }}" alt=""></a>
             </div>
             <div class="col-md-6 text-right">
                 <a href="<?= url('/nosotros/'); ?>">Nosotros</a>
